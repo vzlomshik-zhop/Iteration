@@ -1,9 +1,11 @@
 'use strict';
 
 const sum = (...args) => {
-  // Use for..of loop and accumulator variable
-  // to calculate sum of all given arguments
-  // For example sum(1, 2, 3) should return 6
+  let s = 0;
+  const n = args.length;
+  for (let a of args)
+    s += a;
+  return s;
 };
 
 module.exports = { sum };
